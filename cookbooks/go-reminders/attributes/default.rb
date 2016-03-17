@@ -1,2 +1,5 @@
 default['go-reminders']['etcdhost'] = '192.168.42.26'
 default['go-reminders']['etcdport'] = '4002'
+default['go-reminders']['artifactory']['server'] = '192.168.42.23:8080'
+default['go-reminders']['artifactory']['username'] = 'admin'
+default['go-reminders']['artifactory']['password'] = 'password'
