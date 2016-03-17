@@ -1,0 +1,7 @@
+description "Simple reminders application written in Golang"
+author "VMware, Inc."
+start on runlevel [345]
+stop on runlevel [!345]
+respawn
+respawn limit 10 5
+exec /usr/local/go-reminders/go-reminders -cfgsrc <%= @etcd_host %>:<%= @etcd_port %> >> /usr/local/go-reminders/go-reminders.log 2>&1
