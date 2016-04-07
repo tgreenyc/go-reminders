@@ -34,6 +34,7 @@ template "/etc/init/go-reminders.conf" do
      :db_user => node['go-reminders']['db_user'],
      :db_passwd => node['go-reminders']['db_passwd'],
   }) 
+  notifies :restart, 'service[go-reminders]'
 end
 
 service "go-reminders" do
