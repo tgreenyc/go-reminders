@@ -38,5 +38,5 @@ template "/etc/init/go-reminders.conf" do
 end
 
 service "go-reminders" do
-  action :start
+  action :nothing
 end

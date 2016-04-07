@@ -1,5 +1,5 @@
 default['go-reminders']['db_host'] = '192.168.42.26'
-default['go-reminders']['db_port'] = '3006'
+default['go-reminders']['db_port'] = '3306'
 default['go-reminders']['db_user'] = 'example'
 default['go-reminders']['db_passwd'] = 'example'
 default['go-reminders']['artifactory']['server'] = '192.168.42.23:8080'
