@@ -29,8 +29,10 @@ template "/etc/init/go-reminders.conf" do
   group "root"
   mode "0644"
   variables({
-     :etcd_host => node['go-reminders']['etcdhost'],
-     :etcd_port => node['go-reminders']['etcdport'],
+     :db_host => node['go-reminders']['db_host'],
+     :db_port => node['go-reminders']['db_port'],
+     :db_user => node['go-reminders']['db_user'],
+     :db_passwd => node['go-reminders']['db_passwd'],
   }) 
 end
 
